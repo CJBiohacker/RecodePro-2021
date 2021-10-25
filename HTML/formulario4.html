@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b89fb407e8.js" crossorigin="anonymous"></script>
+    <title>Formulário 3</title>
+</head>
+
+<body>
+    <h1><strong>Concessionária Macacos Furiosos</strong></h1>
+    <h2>Formulário de Escolha</h2>
+    <table border="1">
+        <thead>
+            <tr align="center">
+                <th id="table-title" colspan="3">Informações dos Veículos separados por Tipo e Valor.</th>
+            </tr>
+            <tr>
+                <th id="tipo">Tipo</th>
+                <th id="modelo">Modelo</th>
+                <th class="valor">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carro</td>
+                <td>Tesla Model S</td>
+                <td>R$439.945,00</td>
+            </tr>
+            <tr>
+                <td>Moto</td>
+                <td>Kawasaki Z650</td>
+                <td>R$32.990,00</td>
+            </tr>
+            <tr>
+                <td>Barco</td>
+                <td>Levefort Apolus 600S</td>
+                <td>R$50.674,00</td>
+            </tr>
+            <tr>
+                <td>Bicicleta</td>
+                <td>Shimano Acera Spaceline Vega</td>
+                <td>R$2.150,00</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <label for="fnome">Nome:</label>
+        <input type="text" name="fnome" class="input-style" id="fnome" size="24">
+        <br>
+        <label for="fidade">Idade:</label>
+        <input type="text" text="fidade" class="input-style" id="fidade" size="24">
+        <br>
+        <label for="fdata">Data de Nascimento:</label>
+        <input type="date" text="fdata" class="input-style" id="fdata">
+        <br>
+        <label for="finteresse">Interesse:</label>
+        <label for="carro"><input type="radio" class="input-style" id="fcarro" name="carro-moto-barco-bike"
+                value="carro">Carro</label>
+        <label for="moto"><input type="radio" class="input-style" id="fmoto" name="carro-moto-barco-bike"
+                value="moto">Moto</label>
+        <label for="barco"><input type="radio" class="input-style" id="fbarco" name="carro-moto-barco-bike"
+                value="barco">Barco</label>
+        <label for="bike"><input type="radio" class="input-style" id="fbike" name="carro-moto-barco-bike"
+                value="bike">Bicicleta</label>
+        <div>
+            <button type="submit" id="submit-button">ENVIAR</button>
+        </div>
+    </form>
+</body>
+
+<style>
+    * {
+        margin-left: 2px;
+        background-color: cornsilk;
+    }
+
+    h1 {
+        color: red;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 3%;
+    }
+
+    .input-style {
+        margin: 3px;
+        color: black;
+        background-color: white;
+    }
+
+    form {
+        margin-left: 5px;
+    }
+
+    #submit-button {
+        margin: 5px 10px 0px;
+        padding: 12px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+    }
+</style>
+
+</html>
