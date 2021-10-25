@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b89fb407e8.js" crossorigin="anonymous"></script>
+    <title>Formulário 2</title>
+</head>
+
+<body>
+    <span>
+        <h1><strong>Informações Gerais</strong></h1>
+        <img src="../Images/rodentia-icons_dialog-information.svg" alt="imagem-informação">
+    </span>
+    <form>
+        <label for="fnome">Nome:</label>
+        <input type="text" name="fnome" class="input-style" id="fnome" size="21">
+        <br>
+        <label for="fidade">Idade:</label>
+        <input type="text" text="fidade" class="input-style" id="fidade" size="21">
+        <br>
+        <label for="sexo">Sexo:</label>
+        <label for="masc"><input type="radio" class="input-style" id="fmasc" name="masc-fem-outros"
+                value="masculino">M</label>
+        <label for="fem"><input type="radio" class="input-style" id="ffem" name="masc-fem-outros"
+                value="feminino">F</label>
+        <label for="sexo"><input type="radio" class="input-style" id="foutros" name="masc-fem-outros"
+                value="outros">Outros</label>
+        <input type="text" name="" class="input-style" id="">
+        <div>
+            <button type="submit" id="submit-button">ENVIAR</button>
+        </div>
+    </form>
+</body>
+
+<style>
+    * {
+        margin-left: 2px;
+        background-color: cornsilk;
+    }
+
+    span {
+        display: flex;
+    }
+
+    h1 {
+        color: green;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 3%;
+    }
+
+    .input-style {
+        margin: 3px;
+        color: black;
+        background-color: white;
+    }
+
+    form {
+        margin-left: 5px;
+    }
+
+    #submit-button {
+        margin: 5px 10px 0px;
+        padding: 12px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+    }
+</style>
+
+</html>
