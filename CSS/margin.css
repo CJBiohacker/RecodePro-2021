@@ -4,7 +4,6 @@
     background-color: aquamarine;    
 }
 
-/* Combinador entre classe da div '.forms', e a tag '<form>' que é sua filha. */
 textarea {
     background-color: white;
     font-family:'JetBrains Mono', monospace;
