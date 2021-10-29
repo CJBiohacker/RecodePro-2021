@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,100&display=swap');
+
+* {
+    background-color: aquamarine;    
+}
+
+/* Combinador entre classe da div '.forms', e a tag '<form>' que é sua filha. */
+textarea {
+    background-color: white;
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    border: violet;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 6px;
+    margin:50px 0px 10px 50px;
+}
