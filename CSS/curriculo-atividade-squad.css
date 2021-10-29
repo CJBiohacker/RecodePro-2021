@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&display=swap');
+@import url("https://use.typekit.net/bjt7dew.css");
+
+* {
+    background-color:#cbf8b7;
+}
+
+body {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 120px 0px;
+}
+
+#titulo-principal {
+    font-family: 'JetBrains Mono', monospace;  
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: aileron,sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+}
+
+.div-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
+}
+
+.titulo-campo {
+    font-family: aileron,sans-serif;
+    font-weight: 800;
+    margin: 10px;
+    /* border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;  */
+    border-radius: 35px;
+    padding: 10px;
+    background-color:#034f84;
+    color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sub-texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: -18px ;
+}
+
+.semi-titulo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.lista-item {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+ul {
+    margin-top: -7px;
+}
+
+.conjunto {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+#idioma {
+    display: inline;    
+}
+
+.nivel-idioma {
+    display: flex;
+    align-items: center;
+}
+
+.subtexto-campo {
+    font-size: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width:300px) {
+    body {
+        width: min-content;
+        height: min-content;
+        align-content: center;
+        justify-content: center;
+    }    
+}
