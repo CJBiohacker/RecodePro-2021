@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,100&display=swap');
+
+* {
+    background-color: aquamarine;    
+}
+
+.forms {
+    width: 650px;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;        
+}
+
+.forms form {    /* Combinador entre classe da div '.forms', e a tag '<form>' que é sua filha. */
+    align-self: center;
+    border: violet;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 6px;
+}
+
+textarea {
+    background-color: white;
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+}
+
