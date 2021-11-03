@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+
+<body>
+    <h1>Verifique o resultado da condicional no Console.</h1>
+    <h5>Idade</h5>
+    <h6 id="idade">-</h6>
+    <h5>Mensagem</h5>
+    <h6 id="msg">-</h6>
+</body>
+
+<script>
+
+    let msg1 = "Você é criança.";
+    let msg2 = "Você é adolescente.";
+    let msg3 = "Você é adulto.";
+    let msg4 = "Você é velho.";
+    let msg5 = "Você é IDOSO.";
+    let msgValor = document.getElementById("msg");
+    let idadeValor = document.getElementById("idade");
+
+    let idade = prompt("Digite sua idade:");
+    idadeValor.textContent = idade;
+
+    if (idade >= 0 && idade <= 11) {
+        console.log(msg1);
+        msgValor.textContent = msg1;
+    } else if (idade >= 12 && idade <= 17) {
+        console.log(msg2);
+        msgValor.textContent = msg2;
+    } else if (idade >= 18 && idade <= 40) {
+        console.log(msg3);
+        msgValor.textContent = msg3;
+    } else if (idade >= 41 && idade <= 60) {
+        console.log(msg4);
+        msgValor.textContent = msg4;
+    } else if (idade >= 61) {
+        console.log(msg5);
+        msgValor.textContent = msg5;
+    } else {
+        console.log("Valor inválido");
+    };
+
+</script>
+
+</html>
