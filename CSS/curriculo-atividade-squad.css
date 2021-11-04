@@ -9,12 +9,14 @@ body {
     width: fit-content;
     height: fit-content;
     margin: 0px 120px 0px;
+    /* display: block; */
 }
 
 #titulo-principal {
     font-family: 'JetBrains Mono', monospace;  
     font-weight: bold;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
