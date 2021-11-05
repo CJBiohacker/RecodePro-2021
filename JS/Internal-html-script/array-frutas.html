@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array das Frutas</title>
+</head>
+<body>
+    <h2>Array das Frutas</h2>
+    <p>Verifique o resultado no console</p>
+    <script>
+        const frutas = ["Maçã", "Uva", "Limão"];
+           
+        frutas.push('Laranja');
+        frutas.push('Pera');
+        
+        console.log(frutas.join('--'));
+        console.log(frutas[2]);
+        console.log(frutas[frutas.length - 1]);
+        
+        const frutas2 = ["Banana", frutas[3], "Manga Espada", 'Manga Rosa' , frutas[4], "Morango"];
+
+        console.log(frutas2.join('--'));
+
+        for (let i = 0; i < frutas2.length; i++) {
+            ( (i % 2) != 0 ) ?
+            console.log( frutas2[i] , "tem índice ímpar"):
+            null;      
+        }
+
+    </script>
+</body>
+</html>

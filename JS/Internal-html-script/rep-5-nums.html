@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição dos 5 números</title>
+</head>
+<body>
+    <h2>Repetição de números</h2>
+    <p>Verifique o programa no console.</p>    
+</body>
+
+<script>
+    let n = 0;
+    let i = 1;
+    let soma = 0;
+
+    while (i <= 5) {
+        n = parseInt(prompt(`Digite o ${i}º número:`));
+        console.log(typeof n);
+        soma = soma + n;  
+        i++;
+    }
+
+    console.log(soma);
+</script>
+
+</html>
+
+<!-- 
+Fazer um programa para digitar 5 números e após o término da repetição é preciso exibir na página o valor total (somatório) dos números informados. É preciso exibir também após o término da repetição quantos números digitados são ímpares e pares.
+O programa deve ter um título;
+No <body> deve ter um <h2> Com uma informação que represente o que o programa irá fazer;
+Inserir uma imagem que represente uma estrutura de repetição. A imagem deve estar centralizada na tela;
+No <body> deve ter um parágrafo com orientações sobre a estrutura de repetição. É preciso utilizar o <style> para dar uma forma mais bonita no parágrafo.
+-->
