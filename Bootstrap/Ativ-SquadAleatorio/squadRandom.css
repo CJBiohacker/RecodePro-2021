@@ -27,7 +27,16 @@ h6 {
 }
 
 #titulo-chas {
-    margin: 10px 0px 10px;
+    margin: 25px 0px 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#cha-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #mug-icon {
