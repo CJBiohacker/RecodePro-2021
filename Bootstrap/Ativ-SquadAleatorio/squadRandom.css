@@ -1,10 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;;
-}
-
-#main-container {
-    
+#barra-nav {
+    margin: 15px 0 -5px ;
 }
 
 #title {
@@ -29,6 +24,10 @@ h6 {
     font-weight: lighter;
     font-style: italic;
     font-size: 20px;
+}
+
+#titulo-chas {
+    margin: 10px 0px 10px;
 }
 
 #mug-icon {
