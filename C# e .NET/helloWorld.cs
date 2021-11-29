@@ -10,6 +10,7 @@ namespace Teste
             int total = 0;
 
             Console.WriteLine("Olá Mundo");
+            Console.WriteLine("");
 
             for (int i = 0; i < 10; i++)
             {
@@ -27,6 +28,7 @@ namespace Teste
             }
 
             string escolha;
+            Console.WriteLine("Digite 1 para jogar com Guerreiro ou 2 para jogar com Mago.");
             escolha = Console.ReadLine();
 
             switch (escolha)
@@ -43,6 +45,7 @@ namespace Teste
             }
 
             string cond;
+            Console.WriteLine("Digite 1 para jogar com Ladino ou 2 para jogar com Caçador.");
             cond = Console.ReadLine();
 
             switch (cond)
