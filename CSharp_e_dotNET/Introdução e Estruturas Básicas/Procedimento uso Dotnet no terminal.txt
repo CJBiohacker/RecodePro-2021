@@ -1,6 +1,5 @@
 Métodos para execução do código C# via terminal
 
-
 1 - Utilizando o compilador e executador MONO.
 
 Após instalar o compilador/executador MONO, seguir os seguintes passos no terminal:
@@ -20,3 +19,12 @@ Após instalado, crie uma pasta onde estará o código do programa e siga os pas
 
 Perceba que ele neste método o 'dotnet' somente executa o código principal da pasta. 
 Se você criar mais arquivos de código (formato .cs) eles não serão executados, nem compilados.
+
+INSTALAÇÃO DE PACOTES PARA UMA APLICAÇÃO ASP.NET CORE MVC
+
+Pacotes para conexão com BANCO DE DADOS e IMPLEMENTAÇÃO do programa.
+
+    - dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+    - dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    - dotnet add package Microsoft.EntityFrameworkCore.Tools
+    - dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
