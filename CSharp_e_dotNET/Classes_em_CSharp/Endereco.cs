@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_e_dotNET.Classes_em_CSharp
 {
-    protected class Endereco
+    class Endereco
     {
         private string rua;
         private int num;

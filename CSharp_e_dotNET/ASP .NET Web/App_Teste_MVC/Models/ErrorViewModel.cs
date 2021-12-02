@@ -1,4 +1,4 @@
-namespace ASP_.NET_Web.Models;
+namespace App_Teste_MVC.Models;
 
 public class ErrorViewModel
 {
