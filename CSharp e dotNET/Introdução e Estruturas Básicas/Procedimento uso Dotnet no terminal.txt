@@ -16,6 +16,7 @@ Após instalado, crie uma pasta onde estará o código do programa e siga os pas
     - Dentro da pasta do código, digitar o comando para checar se foi instalado corretamente -> dotnet --version 
     - Digitar o comando para criar um 'projeto C#' dentro da pasta para execução do código -> dotnet new console
     - Digitar o comando para executar o código -> dotnet run
+    - Dessa forma ele irá executar o código dentro do arquivo gerado, Program.cs.
 
 Perceba que ele neste método o 'dotnet' somente executa o código principal da pasta. 
-Se você criar mais arquivos de código eles não serão executados, nem compilados.
+Se você criar mais arquivos de código (formato .cs) eles não serão executados, nem compilados.
