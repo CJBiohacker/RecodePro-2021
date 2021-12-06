@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations; // Referência manual
 
 namespace Filmes.Models
 {
-    public class Filme
+    public class Filme  // Criação da tabela Filme do Banco de Dados
     {
         [Key]           // Define o Atributo Id como PRIMARY KEY da tabela.
         [Required]      // Define o Atributo Id como NOT NULL.
