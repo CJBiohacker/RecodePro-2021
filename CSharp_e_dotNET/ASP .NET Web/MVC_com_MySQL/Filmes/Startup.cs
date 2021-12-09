@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore;
-using Microsoft.EntityFrameworksCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using MySql.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql;
@@ -38,8 +38,8 @@ namespace Filmes
             mySqlOptions.CharSetBehavior(CharSetBehavior.NeverAppend)));
 
             // Configurando conexão para SQL SERVER
-            services.AddDbContext<FilmeContext>(FileOptions =>
-            options.UseSqlServer(Configuration.GetConnectionStrng("ConnDB")));
+            // services.AddDbContext<FilmeContext>(FileOptions =>
+            // options.UseSqlServer(Configuration.GetConnectionString("ConnDB")));
 
             services.AddControllersWithViews();
         }
