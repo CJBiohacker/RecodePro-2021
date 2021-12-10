@@ -24,10 +24,11 @@ INSTALAÇÃO DE PACOTES PARA UMA APLICAÇÃO ASP.NET CORE MVC
 
     Pacotes para conexão com BANCO DE DADOS e IMPLEMENTAÇÃO do programa.
         Digitar os comandos abaixo:
-        -> dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
-        -> dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-        -> dotnet add package Microsoft.EntityFrameworkCore.Tools
-        -> dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+        -> dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 5.0.8
+        -> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.8
+        -> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.8
+        -> dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.8
+        -> dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
 
 CRIANDO CONEXÃO COM O SQLSERVER COM UMA APLICAÇÃO ASP.NET CORE MVC
 
@@ -55,3 +56,10 @@ CRIANDO CONEXÃO COM O SQLSERVER COM UMA APLICAÇÃO ASP.NET CORE MVC
             },
         }     
     
+CRIANDO CONTROLLERS E VIEWS NUMA APLICAÇÃO MVC DOTNET
+
+    Adicionar o Pacote do Web Code Generation Design
+        dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
+
+        dotnet aspnet-codegenerator --project "<Pasta de Destino do Projeto>" controller --force --controllerName AutorController --model Bookstore.Models.Autor --dataContext Bookstore.Data.LivroContext --relativeFolderPath Controllers --controllerNamespace Bookstore.Controllers
+
