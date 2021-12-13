@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#align-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border: 2px solid orange;
+    border-radius: 8px;
+    width: 50%;
+}
+
+h1 {
+    background-color: orange;
+    padding: 2vh;
+
+}
+
+p {
+   padding: 5vh 1.5vh;
+}
