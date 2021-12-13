@@ -12,7 +12,6 @@ namespace CSharp_e_dotNET.Classes_em_CSharp
             int ano, mes, dia = 0;
 
             Cliente carlos = new Cliente();
-            DateTime dtNasc = new DateTime(1990, 03, 12);
 
             carlos.setNome("Carlos");
             carlos.setSobrenome("Junior");
@@ -21,7 +20,7 @@ namespace CSharp_e_dotNET.Classes_em_CSharp
             var sobrenome = carlos.getSobrenome();
             var data = carlos.getDataNasc();
 
-            System.Console.WriteLine($"{nome} {sobrenome}\n Data Nasc: {dtNasc.form}");
+            System.Console.WriteLine($"{nome} {sobrenome}\n Data Nasc: {data}");
         }
     }
 }
