@@ -9,7 +9,7 @@ using TripScript.Data;
 namespace TripScript.Migrations
 {
     [DbContext(typeof(TripScriptContext))]
-    [Migration("20211215023336_TripScript")]
+    [Migration("20211217025644_TripScript")]
     partial class TripScript
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
