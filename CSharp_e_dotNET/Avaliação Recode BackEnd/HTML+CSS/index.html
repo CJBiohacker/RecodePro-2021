@@ -36,7 +36,7 @@
 <body>
     <header>
         <nav class="navbar-container">
-            <img src="TripScript.svg" alt="TripScript Logo">
+            <a href=""><img src="TripScript.svg" alt="TripScript Logo"></a>
             <ul class="navbar-list text-2nd">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinos">Destinos</a></li>
@@ -51,139 +51,171 @@
     </header>
 
     <main>
-        <div class="glide" id="options-type">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides" id="slide-container">
-                    <li class="glide__slide"><img src="./images/fernando-de-noronha.svg" alt=""></li>
-                    <li class="glide__slide"><img src="./images/gruta-lagoazul.svg" alt=""></li>
-                    <li class="glide__slide"><img src="./images/jardimbotanicoSP.svg" alt=""></li>
-                    <li class="glide__slide"><img src="./images/penedo.svg" alt=""></li>
-                    <li class="glide__slide"><img src="./images/porto-de-galinhas.svg" alt=""></li>
-                    <li class="glide__slide"><img src="./images/praia-camburi-vitoriaes.svg" alt=""></li>
-                </ul>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        <figure>
+            <div class="glide" id="options-type">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides" id="slide-container">
+                        <li class="glide__slide"><img src="./images/fernando-de-noronha.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/gruta-lagoazul.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/jardimbotanicoSP.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/penedo.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/porto-de-galinhas.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/praia-camburi-vitoriaes.svg" alt=""></li>
+                    </ul>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </figure>
 
         <div id=home>
-            <img src="TripScript.svg" alt="TripScript Logo">
-            <h1>Conheça </h1>
+            <img class="home-logo" src="./images/TripScript Logo Alt.svg" alt="TripScript Logo">
+            <section class="home-intro">
+                <h1>Seja Bem Vindo à TripScript</h1>
+                <p>Uma empresa de serviços com um time de profissionais que têm como missão serem os(as) protagonistas
+                    na
+                    realização do seu sonho em viajar.</p>
+                <p>Estamos à mais de 5 anos no mercado e estamos comprometidos em
+                    melhorar nossos serviços a cada ano para proporcionar viagens únicas para nossos clientes.</p>
+            </section>
+            <section class="home-intro2">
+                <h1>Por quê viajar com a TripScript ?</h1>
+                <p>Permitimos várias formas de pagamentos: Pix, Débito Online, Crédito (até 12x s/ juros) e Boleto
+                    Bancário.</p>
+                <p>O viajante não precisa realizar qualquer pagamento no balcão do estabelecimento. Tudo é
+                    resolvido online.</p>
+                <p>Se pintar algum imprevisto, o viajante não precisa se preocupar: o cancelamento é grátis até a
+                    véspera do check-in. E em caso de pacote, quando a viagem for agendada.</p>
+                <p>Disponibilizamos um canal de dúvidas via Whatsapp, Telegram e/ou Signal entre às 8h-22h.</p>
+            </section>
         </div>
 
         <div id="destinos">
             <div class="destinos-title">
                 <h1>Escolha os melhores Destinos do Brasil</h1>
             </div>
+
             <div id="destinos-container">
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Paraty - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://www.ilhagrande.com.br/wp-content/uploads/2015/03/enseada-de-aracatiba-ilha-grande-7.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Ilha Grande - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;2-3 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$599,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/thinkstockphotos-4744489501.jpeg?quality=70&strip=info&w=1024"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Recife - Pernambuco</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;3-4 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Casa</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$649,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://a.cdn-hotels.com/gdcs/production178/d1743/caf5443a-60c8-442a-bca4-ae9afc154fea.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Fortaleza - Ceará</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Janta</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$1299,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://www.anchieta.es.gov.br/uploads/filemanager/Praias/RA-0799.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Anchieta - Espírito Santo</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Pousada</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$459,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="destinos-card">
-                    <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
-                        class="card-img-top" alt="Paraty RJ">
-                    <div class="card-body">
-                        <h3 class="card-title">Paraty - Rio de Janeiro</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
-                                <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Paraty - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
                             </div>
-                            <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
             </div>

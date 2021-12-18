@@ -89,14 +89,42 @@ html {
 
         main {
             
-            #slide-container {
-                height: 80vh;
-                width: 100vw;
+            figure {
+                #slide-container {
+                    width: 100vw;
+                    height: 80vh;
+                    
+                }
             }
 
             #home {
-
+                width: 100%;
+                height: 75vh;
+                background-color: #892BE2C8;
                 
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 10% 30% 5% 40% 15%;
+
+                font-family: $fonteTitulo;
+                color: white;
+
+                .home-logo {
+                    grid-row-start: 3;
+                    grid-column-start: 1;
+                    justify-self: center;
+                    align-self: center;
+                }
+
+                .home-intro {
+                    grid-row-start: 2;
+                    grid-column-start: 2;
+                }
+
+                .home-intro2 {
+                    grid-row-start: 4;
+                    grid-column-start: 2;   
+                }
             }
 
             #destinos {
