@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -117,7 +118,7 @@ html {
 
 * body main #home {
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   background-color: #892BE2C8;
   display: -ms-grid;
   display: grid;
@@ -148,6 +149,11 @@ html {
       grid-column-start: 2;
 }
 
+* body main #home .home-intro > p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
 * body main #home .home-intro2 {
   -ms-grid-row: 4;
       grid-row-start: 4;
@@ -155,16 +161,13 @@ html {
       grid-column-start: 2;
 }
 
+* body main #home .home-intro2 > p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
 * body main #destinos .destinos-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   padding: 2rem 0;
   font-family: "Poppins", sans-serif;
 }
@@ -261,7 +264,114 @@ html {
   font-size: 24px;
 }
 
-* body main #contato {
-  background-color: #E3A442;
+* body main #promoçoes {
+  background-color: #CD23FA;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+* body main #promoçoes .promoçoes-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+* body main #promoçoes #promoçoes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+* body main #promoçoes #promoçoes-container .promoçoes-card {
+  width: 25vw;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: rgba(234, 232, 232, 0.8);
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+* body main #promoçoes #promoçoes-container .card-img-top {
+  width: 25vw;
+  height: 28vh;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+* body main #promoçoes #promoçoes-container .card-body {
+  padding: 0.5rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-title {
+  font-family: "Poppins", sans-serif;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info .card-text {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info .card-text > strong {
+  color: #32960E;
+  font-size: 24px;
+}
+
+* body main #contato .contato-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
