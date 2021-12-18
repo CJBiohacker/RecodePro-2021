@@ -9,6 +9,10 @@
     <!-- LINK ESTILO CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- LINK GLIDE.JS SLIDE/CAROSEL ESTILO CSS -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
     <!-- LINK FONTAWESOME ÍCONES CUSTOMIZADOS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -19,7 +23,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-
 
     <title>TripScript</title>
 </head>
@@ -44,6 +47,34 @@
     <main>
         <div id=home>
 
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img
+                                src="https://brasilturis.com.br/wp-content/uploads/2020/09/ahpg_vlubambo-0151-1-scaled.jpg"
+                                alt=""></li>
+                        <li class="glide__slide"><img
+                                src="https://pe.unit.br/wp-content/uploads/2021/11/fernando-de-noronha-4590866_1920.jpg"
+                                alt=""></li>
+                        <li class="glide__slide"><img
+                                src="https://www.segueviagem.com.br/wp-content/uploads/2019/11/praia-de-camburi_vitoria_setur_yuri-barichivich-2.jpg"
+                                alt=""></li>
+                        <li class="glide__slide"><img
+                                src="https://www.oikostravel.com.br/wp-content/uploads/2020/07/Expedi%C3%A7%C3%A3o-Monte-Roraima.jpg"
+                                alt=""></li>
+                        <li class="glide__slide"><img
+                                src="https://quantocustaviajar.com/blog/wp-content/uploads/2018/12/dunas-de-genipabu-1.jpg"
+                                alt=""></li>
+                    </ul>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
 
         <div id="destinos">
@@ -63,8 +94,25 @@
 
     </footer>
 
-    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script src="./carousel-script.js"></script>
+    <!-- SCRIPT DO SLIDE/CAROUSEL GLIDE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        var select = document.querySelector('#options-type-select')
+
+        var glide = new Glide('#options-type', {
+            type: select.value,
+            focusAt: 'center',
+            perView: 3
+        })
+
+        select.addEventListener('change', function (event) {
+            glide.update({
+                type: event.target.value
+            })
+        })
+
+        glide.mount()
+    </script>
 </body>
 
 </html>
