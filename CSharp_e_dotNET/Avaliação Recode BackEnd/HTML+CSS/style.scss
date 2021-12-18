@@ -1,5 +1,12 @@
 // Variáveis SASS
-$fontPri:'Ubuntu', sans-serif; 
+$fonteGeral:'Ubuntu', sans-serif;
+$fonteTitulo:'Poppins', sans-serif;
+
+$bg: rgba(234, 232, 232, 0.8);
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -10,13 +17,20 @@ $fontPri:'Ubuntu', sans-serif;
     body {
 
         .text-2nd {
-            font-family: $fontPri;
+            font-family: $fonteGeral;
             font-size: 18px;
+
+            :hover {
+                opacity: 0.6;
+            }
         }
 
         header {
             padding: 2rem;
-            background-color: #892BE2AF;
+            background-color: #892BE2C8;
+            position: sticky;
+            top: 0;
+            z-index: 1;
             
             
             .navbar-container {
@@ -24,6 +38,7 @@ $fontPri:'Ubuntu', sans-serif;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                                
 
                 @media screen and (max-width: 480px) {
                     display: flex;
@@ -73,14 +88,109 @@ $fontPri:'Ubuntu', sans-serif;
         }
 
         main {
-         
+            
+            #slide-container {
+                height: 80vh;
+                width: 100vw;
+            }
+
             #home {
 
-            }
-
-            #destino {
                 
             }
+
+            #destinos {
+
+                .destinos-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    padding: 2rem 0;
+
+                    font-family: $fonteTitulo;
+                }
+                
+                #destinos-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    
+                    gap: 2rem;
+                    
+                    .destinos-card {
+                        width: 25vw;
+                        // height: 50vh;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        
+                        display:flex;
+                        flex-direction: column;
+                        text-align: center;
+                        
+                        background: $bg;
+                        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                    }
+          
+                    .card-img-top {
+                        width: 25vw;
+                        height: 28vh;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                    }          
+    
+                    .card-body {
+                        padding: 0.5rem 1.25rem;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8rem;
+    
+                        .card-title {
+                            font-family: $fonteTitulo;
+                        }
+    
+                        .card-info {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5rem;
+
+                            >div {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                            }
+
+                            .card-text {
+                                font-family: $fonteGeral;
+                                text-align: center;
+
+                                >strong {
+                                    color: #32960E;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #promoçoes {
+
+
+            }
+
+            #contato {
+                background-color: #E3A442;
+
+            }
+        }
+
+        footer {
+
+
+
         }
     }
 }
