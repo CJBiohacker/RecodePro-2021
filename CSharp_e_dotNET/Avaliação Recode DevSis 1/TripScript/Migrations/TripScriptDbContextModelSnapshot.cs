@@ -7,8 +7,8 @@ using TripScript.Data;
 
 namespace TripScript.Migrations
 {
-    [DbContext(typeof(TripScriptContext))]
-    partial class TripScriptContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(TripScriptDbContext))]
+    partial class TripScriptDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

@@ -36,7 +36,7 @@ namespace TripScript
             // Configuração da Conexão MySQL
             var connDB = Configuration["ConexaoMySql:MySqlConnectionString"];
 
-            services.AddDbContext<TripScriptContext>(options => options.UseMySql(connDB, new MySqlServerVersion(new System.Version(8, 0, 22)), mySqlOptions => mySqlOptions.CharSetBehavior(CharSetBehavior.NeverAppend)));
+            services.AddDbContext<TripScriptDbContext>(options => options.UseMySql(connDB, new MySqlServerVersion(new System.Version(8, 0, 22)), mySqlOptions => mySqlOptions.CharSetBehavior(CharSetBehavior.NeverAppend)));
 
             services.AddControllersWithViews();
         }

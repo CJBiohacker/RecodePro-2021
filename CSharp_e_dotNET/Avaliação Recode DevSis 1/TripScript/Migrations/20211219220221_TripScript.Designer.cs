@@ -8,8 +8,8 @@ using TripScript.Data;
 
 namespace TripScript.Migrations
 {
-    [DbContext(typeof(TripScriptContext))]
-    [Migration("20211217030507_TripScript")]
+    [DbContext(typeof(TripScriptDbContext))]
+    [Migration("20211219220221_TripScript")]
     partial class TripScript
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

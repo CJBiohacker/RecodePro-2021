@@ -1,12 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
+#nullable disable
+
 namespace TripScript.Models
 {
-    public class Cliente
+    public partial class Cliente
     {
         [Key]
         [Required]
@@ -19,5 +21,6 @@ namespace TripScript.Models
         public string Endereco { get; set; }
         [Required]
         public string Celular { get; set; }
+
     }
 }

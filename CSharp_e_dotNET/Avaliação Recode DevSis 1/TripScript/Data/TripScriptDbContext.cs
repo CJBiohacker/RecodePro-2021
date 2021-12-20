@@ -8,14 +8,13 @@ using TripScript.Models;
 
 namespace TripScript.Data
 {
-    public class TripScriptContext : DbContext
+    public class TripScriptDbContext : DbContext
     {
-        public TripScriptContext(DbContextOptions<TripScriptContext> Options) : base(Options)
+        public TripScriptDbContext(DbContextOptions<TripScriptDbContext> Options) : base(Options)
         {
         }
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Viagem> Viagens { get; set; }
-
     }
 }
