@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Button, Text, TextInput, View } from 'react-native';
 import ResultadoIMC from './ResultadoIMC';
+import styles from './style';
 
 const Form = () => {
 
@@ -32,8 +33,8 @@ const Form = () => {
     }
 
     return (
-        <View>
-            <View>
+        <View style={styles.formulario}>
+            <View style={styles.formContext}>
                 <Text>Digite sua Altura: </Text>
                 <TextInput
                     onChangeText={setAltura}

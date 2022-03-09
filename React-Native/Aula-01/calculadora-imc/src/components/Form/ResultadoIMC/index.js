@@ -4,8 +4,8 @@ import { Text, View } from 'react-native';
 const ResultadoIMC = (resultado) => {
     return (
         <View>
-            <Text>{resultado.mensagem}</Text>
-            <Text>{resultado.valor}</Text>
+            <Text >{resultado.mensagem}</Text>
+            <Text >{resultado.valor}</Text>
         </View>
     );
 }

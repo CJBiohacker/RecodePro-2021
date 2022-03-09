@@ -1,6 +1,6 @@
-import { StylesSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const styles = StylesSheet.create({
+const styles = StyleSheet.create({
     boxTitle: {
         alignItems: 'center',
         justifyContent: 'center',

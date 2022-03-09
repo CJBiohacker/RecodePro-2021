@@ -5,8 +5,8 @@ import styles from './style';
 const Title = () => {
     return (
         // View equivale a div no React Native.
-        <View style={styles.}>
-            <Text>
+        <View style={styles.boxTitle}>
+            <Text style={styles.textTitle}>
                 Calculadora IMC
             </Text>
         </View>
