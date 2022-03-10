@@ -10,7 +10,7 @@ const Form = () => {
     const [peso, setPeso] = useState(null);
     const [msg, setMsg] = useState("Preencha os campos altura e peso.");
     const [imc, setImc] = useState(null);
-    const [textButton, setTextButton] = useState("Calcular")
+    const [textButton, setTextButton] = useState("Calcular");
 
     // Função com a lógica de validação dos valores inseridos
     const validaIMCValues = () => {
