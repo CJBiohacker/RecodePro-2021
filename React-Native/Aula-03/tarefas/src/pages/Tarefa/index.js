@@ -22,20 +22,16 @@ const Tarefa = ({ navigation }) => {
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={tarefa}
-
                 renderItem={({ item }) => {
                     return (
                         <View style={styles.styleTarefa}>
-                            <TouchableOpacity
-                                style={styles.deleteTarefa}
-                                onPress={() => { deletarTarefa(item.id) }}
-                            >
-                                <FontAwesome
-                                    nome='star'
-                                    size={23}
-                                    color='#f92eba'>
-                                </FontAwesome>
-                            </TouchableOpacity>
+
+                            <FontAwesome
+                                nome='star'
+                                size={23}
+                                color='#f92eba'>
+                            </FontAwesome>
+
                             <Text
                                 style={styles.descricaoTarefa}
                                 onPress={() => {
